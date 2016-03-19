@@ -7,6 +7,7 @@ class CreateTransactions < ActiveRecord::Migration
       t.boolean :type_transfer
       t.boolean :type_deposit
       t.boolean :type_withdrawal
+      t.boolean :type_fee
 
       t.timestamps null: false
     end

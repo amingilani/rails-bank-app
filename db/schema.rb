@@ -32,12 +32,13 @@ ActiveRecord::Schema.define(version: 20160319175554) do
     t.boolean  "type_transfer"
     t.boolean  "type_deposit"
     t.boolean  "type_withdrawal"
+    t.boolean  "type_fee"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.boolean  "fee"
+    t.boolean  "charge_fee"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

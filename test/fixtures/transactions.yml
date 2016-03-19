@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 9.99
+  from_id: 1
+  to_id: 1
+  type_transfer: false
+  type_deposit: false
+  type_withdrawal: false
+
+two:
+  amount: 9.99
+  from_id: 1
+  to_id: 1
+  type_transfer: false
+  type_deposit: false
+  type_withdrawal: false

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  balance: 9.99
+  meta: false
+  meta_name: MyString
+  user_id: 1
+
+two:
+  balance: 9.99
+  meta: false
+  meta_name: MyString
+  user_id: 1

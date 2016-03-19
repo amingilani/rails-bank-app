@@ -1,7 +1,7 @@
 class CreateAccounts < ActiveRecord::Migration
   def change
     create_table :accounts do |t|
-      t.decimal :balance
+      t.decimal :balance, default: 0
       t.boolean :meta
       t.string :meta_name
       t.integer :user_id

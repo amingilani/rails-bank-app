@@ -37,12 +37,9 @@ ActiveRecord::Schema.define(version: 20160319175554) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.integer  "account_id"
     t.boolean  "fee"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  add_index "users", ["account_id"], name: "index_users_on_account_id"
 
 end

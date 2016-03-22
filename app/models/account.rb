@@ -57,6 +57,10 @@ class Account < ActiveRecord::Base
       transaction[:to].increment!('balance', transaction[:amount])
       transaction[:from].decrement!('balance', transaction[:amount])
 
+      fail 'Balance cannot be negative' if
+      transaction[:from].balance < BigDecimal('0') &&
+      transaction[:from].meta? == false
+
       Transaction.create(fee_transaction) if transaction[:transfer]
     end
   end
